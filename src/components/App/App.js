@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useEffect, useState } from 'react';
 import config from '../../key'
+import ImageContainer from '../ImageContainer/ImageContainer';
 
 function App() {
 
@@ -34,8 +35,9 @@ function App() {
         onChange={handleSearchChange}
       />
       <button onClick={handleSubmit} > submit </button>
-
-      {imageData[0] ? <img src={imageData[0].url} /> : null}
+      <ImageContainer
+      imageData={imageData}
+      />
     </div>
   );
 }
