@@ -2,6 +2,7 @@ import './App.css';
 import React, { useEffect, useState } from 'react';
 import config from '../../key'
 import ImageContainer from '../ImageContainer/ImageContainer';
+import SearchBar from '../SearchBar/SearchBar';
 
 function App() {
 
@@ -30,11 +31,11 @@ function App() {
 
   return (
     <div>
-      <input type='text'
-        value={search}
-        onChange={handleSearchChange}
+      <SearchBar
+      search={search}
+      handleSearchChange={handleSearchChange}
+      handleSubmit={handleSubmit}
       />
-      <button onClick={handleSubmit} > submit </button>
       <ImageContainer
       imageData={imageData}
       />
