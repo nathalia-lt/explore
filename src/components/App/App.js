@@ -30,7 +30,8 @@ function App() {
   }
 
   return (
-    <div>
+    <div className= 'background'>
+
       <SearchBar
       search={search}
       handleSearchChange={handleSearchChange}
