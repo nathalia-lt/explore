@@ -1,0 +1,10 @@
+
+.header{
+    position: absolute; 
+    margin-bottom: 85vh;
+    font-family:'Courgette', cursive;
+    font-size: 9vh;
+    color: white;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #e9d29d, 0 0 0.5em #e7d6af, 0 0 0.1em #d5c39a, 0 10px 3px #000;
+    margin-right: 4.5vw;
+}

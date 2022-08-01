@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import config from '../../key'
 import ImageContainer from '../ImageContainer/ImageContainer';
 import SearchBar from '../SearchBar/SearchBar';
+import Header from '../Header/Header';
 
 function App() {
 
@@ -29,12 +30,13 @@ function App() {
       .catch(err => console.error(err));
   }
 
-  
+
 
 
   return (
     <div className= 'background'>
-
+      <Header
+      />
       <SearchBar
       search={search}
       handleSearchChange={handleSearchChange}
