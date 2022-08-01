@@ -6,6 +6,10 @@
 
 .searchInput{
     font-size: 5vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: grey;
+    border: none;
+    border-radius: 5px;
 }
 
 .submitButton{
