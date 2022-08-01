@@ -1,0 +1,19 @@
+
+.imageContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.image{
+    margin-top: 3vh;
+    height: 45vh;
+    margin-right: 5.5vh;
+    border: 2px solid black;
+}
+
+.title{
+    margin-top: 2vh;
+    margin-right: 5vh;
+    color: white;
+    font-size: 3vh;
+}

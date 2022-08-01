@@ -1,0 +1,16 @@
+
+.searchBar{
+    align-content: center;
+}
+
+
+.searchInput{
+    font-size: 5vh;
+}
+
+.submitButton{
+    align-self: center;
+    font-size: 4.6vh;
+    background-color: transparent;
+    border: none;
+}
