@@ -1,20 +1,62 @@
+
 .imageCard{
     display: flex;
     flex-direction: column;
+    transition: .5s ease;
 }
 
 .image{
-    
     margin-top: 3vh;
-    height: 19vh;
+    height: 17.5vh;
     width: 15vw;
     margin-right: 5.5vh;
     border: 2px solid black;
 }
 
+.imageCard:hover{
+    z-index: 10;
+        /* when we hover over it we will give the higher z-index, so it means that will have the highest priority of what is going to be displayed first */
+    -webkit-transform: scale(3);
+            transform: scale(3);
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+}
+
+.imageContainer > .imageCard:first-child{
+    transform-origin: left;
+}
+.imageContainer > .imageCard:nth-child(5){
+    transform-origin: right;
+}
+.imageContainer > .imageCard:nth-child(6){
+    transform-origin:bottom left;
+}
+.imageContainer > .imageCard:nth-child(10){
+    transform-origin:bottom right;
+}
+
+
 .title{
-    margin-top: 2vh;
+    margin-top: 21.5vh;
     margin-right: 5vh;
     color: white;
-    font-size: 3vh;
+    font-size: 1vh;
+    position: absolute;
+}
+
+.imageContainer>.imageCard:nth-child(7) {
+    transform-origin: bottom;
+
+}
+
+.imageContainer>.imageCard:nth-child(8) {
+    transform-origin: bottom;
+
+}
+.imageContainer>.imageCard:nth-child(9) {
+    transform-origin: bottom;
+}
+
+.hidden{
+    visibility: hidden;
 }
