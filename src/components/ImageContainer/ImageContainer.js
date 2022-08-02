@@ -12,7 +12,7 @@ let imagesToDisplay = imageData.map((image, idx) => {
     )
 })
     return(
-        <div>
+        <div className= 'imageContainer'>
             {imageData.length ? imagesToDisplay : null}
         </div>
 
