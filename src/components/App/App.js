@@ -21,9 +21,11 @@ function App() {
     setSearch(event.target.value)
   }
 
-  function handleSubmit() {
+  function handleSubmit(e) {
+    e.preventDefault() //preventDefault will not refresh the page automaticamente
     console.log('hello')
-    let url = 'https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/Search/ImageSearchAPI?q=' + { search } + '&pageNumber=1&pageSize=10&autoCorrect=true'
+    let url = 'https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/Search/ImageSearchAPI?q='+search+'&pageNumber=1&pageSize=10&autoCorrect=true'
+    console.log(url)
     fetch(url, config)
       .then(response => response.json())
       .then(response => setImageData(response.value))
