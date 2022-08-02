@@ -1,18 +1,19 @@
 import './ImageContainer.css'
+import Image from '../Image/Image'
 
 
 export default function ImageContainer( {imageData} ){
-
-
-
-
-
+let imagesToDisplay = imageData.map((image, idx) => {
+    return(
+        <Image
+        key={idx}
+        image={image}
+        />
+    )
+})
     return(
         <div>
-            {imageData[0] ? <div className='imageContainer' >
-                <img className='image' src={imageData[0].url} />
-                <div className='title'> {imageData[0].title} </div>
-                </div> : null}
+            {imageData.length ? imagesToDisplay : null}
         </div>
 
     )
