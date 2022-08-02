@@ -5,4 +5,5 @@
     flex-direction: row;
     flex-wrap: wrap;
     /* flex-wrap try to fit everything in one line but if doesnt fit it will put in the next line */
+    margin-bottom: 10vh;
 }
