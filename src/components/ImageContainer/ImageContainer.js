@@ -11,9 +11,14 @@ let imagesToDisplay = imageData.map((image, idx) => {
         />
     )
 })
+
+let imagesTernary = imageData.length ? imagesToDisplay : null
+//Here I am checking if there is information in your data array or not.
+//if there isnt there will be erros and your aplication is going to crash
+
     return(
         <div className= 'imageContainer'>
-            {imageData.length ? imagesToDisplay : null}
+        {imagesTernary}
         </div>
 
     )

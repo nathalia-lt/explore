@@ -14,6 +14,8 @@ export default function Image( {image} ){
 
     let titleClass = titleVisibility ? 'title' : 'title hidden'
 
+    // we stack css classes together and in this way we can apply the atributes of both at the same time (title hidden)
+
     function handleMouseOut(){
         setTitleVisibility(false)
     }
@@ -22,7 +24,7 @@ export default function Image( {image} ){
     return(
         <div className='imageCard' onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} >
                 <img className='image' src={image.url} />
-                <div className={titleClass} > {image.title} </div>
+                <div className={titleClass}> {image.title} </div>
                 {/* here I am applying two classes in once */}
                 </div> 
     )
