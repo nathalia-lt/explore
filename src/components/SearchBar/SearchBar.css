@@ -2,6 +2,7 @@
 .searchBar{
     align-content: center;
     margin-bottom: 5vh;
+    z-index: 10;
 }
 
 
@@ -19,4 +20,6 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    user-select: none;
 }
+

@@ -22,19 +22,3 @@
     100%{background-position:0% 50%}
   }
 
-  .pageNumButtons{
-    display: flex;
-    flex-direction: row;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    margin-right: 3vw;
-    font-size: 3.5vh;
-  }
-
-  .pageNewButton{
-    font-size: 2vh;
-    margin-left: 0.7vh;
-    margin-right: 0.7vh;
-    border: none;
-  }
