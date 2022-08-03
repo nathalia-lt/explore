@@ -62,11 +62,6 @@ function handleRightClick(){
 
 
 
-
-
-
-
-
   function handleSubmit(e) {
     setPageNum(1) //aqui toda vez que eu fizer uma nova busca, voltar para a pagina 1 da pesquisa, tambem tenho que ir na url e trocar para 1 inves de pageNum +1
     e.preventDefault() //preventDefault will not refresh the page automaticamente
